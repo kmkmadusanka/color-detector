@@ -8,7 +8,7 @@ const { color_list } = require('./configs/color');
 module.exports.accessFromId = (id) => {
   return new Promise(async (resolve, reject) => {
     try {
-      resolve(await accessColorFromString('colorId', id));
+      resolve(await accessColorFromString('colorId', 'number', id));
     } catch (error) {
       reject(error);
     }
@@ -22,7 +22,7 @@ module.exports.accessFromId = (id) => {
 module.exports.accessFromName = (name) => {
   return new Promise(async (resolve, reject) => {
     try {
-      resolve(await accessColorFromString('name', name));
+      resolve(await accessColorFromString('name', 'string', name));
     } catch (error) {
       reject(error);
     }
@@ -36,7 +36,7 @@ module.exports.accessFromName = (name) => {
 module.exports.accessFromHexString = (hex) => {
   return new Promise(async (resolve, reject) => {
     try {
-      resolve(await accessColorFromString('hexString', hex));
+      resolve(await accessColorFromString('hexString', 'string', hex));
     } catch (error) {
       reject(error);
     }
@@ -136,10 +136,10 @@ module.exports.accessColorFromHSL = ({ h, s, l }) => {
  * @param {string} key The string
  * @param {string} variable The string
  */
-accessColorFromString = (key, variable) => {
+accessColorFromString = (key, type, variable) => {
   return new Promise((resolve, reject) => {
-    // check for string
-    if (typeof variable === 'string' && variable !== null) {
+    // check for type
+    if (typeof variable === type && variable !== null) {
       // loop through color array
       for (let index = 0; index < color_list.length; index++) {
         const element = color_list[index];
