@@ -1,0 +1,30 @@
+{
+  "name": "color-detector",
+  "version": "1.0.0",
+  "description": "Easy access to all the color formats on the web.",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kmkmadusanka/color-detector.git"
+  },
+  "keywords": [
+    "color",
+    "colour",
+    "detector",
+    "mapper",
+    "color-mapper",
+    "colour-detector"
+  ],
+  "author": "K.M. Kasun Madusanka",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kmkmadusanka/color-detector/issues"
+  },
+  "homepage": "https://github.com/kmkmadusanka/color-detector#readme"
+}
