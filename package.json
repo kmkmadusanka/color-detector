@@ -1,6 +1,6 @@
 {
   "name": "color-detector",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Easy access to all the color formats on the web.",
   "main": "index.js",
   "directories": {
@@ -14,10 +14,13 @@
     "url": "git+https://github.com/kmkmadusanka/color-detector.git"
   },
   "keywords": [
+    "color-detector",
     "color",
     "colour",
     "detector",
     "mapper",
+    "color-map",
+    "colour-map",
     "color-mapper",
     "colour-detector"
   ],
