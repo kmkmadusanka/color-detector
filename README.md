@@ -1,6 +1,6 @@
 # color-detector
 
-**color-detector** is an Javascript library to get all the HTML colors (256 colors) in standerd formts. (hex, rgb, hsl and simple name).
+**color-detector** is an Javascript library to get all the HTML colors (256 colors) in standard formats. (hex, rgb, hsl and simple name).
 
 This library helps you to filter through any type of standard color format and find you all other details of it.
 
