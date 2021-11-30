@@ -1,4 +1,3 @@
-// import axios to send API calls.
 const { color_list } = require('./configs/color');
 
 /**
